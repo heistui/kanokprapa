@@ -16,7 +16,7 @@ html, body, #wrapper {
    margin: 0;
    padding: 0;
    border: 0;
-     background-image:url(imgs/bg.png);
+   background-image:url(imgs/bg.png);
 }
 
 @keyframes animatedBackground {
