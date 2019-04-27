@@ -17,41 +17,12 @@ html, body, #wrapper {
    padding: 0;
    border: 0;
    background-image:url(imgs/bg.png);
+    position:fixed;
+    overflow-y:hidden;
+    overflow-x:hidden;
 }
 
-@keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 100px 0; }
-}
-@-moz-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 100px 0; }
-}
-@-webkit-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 100px 0; }
-}
-@-ms-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 100px 0; }
-}
-@-o-keyframes animatedBackground {
-	0% { background-position: 0 0; }
-	100% { background-position: 100px 0; }
-}
 
-#animate-area { 
-	width: 100%; 
-	height: 960px; 
-	background-image: url(imgs/bg.png);
-	background-position: 0px 0px;
-
-	animation: animatedBackground 10s linear infinite;
-	-moz-animation: animatedBackground 10s linear infinite;
-	-webkit-animation: animatedBackground 10s linear infinite;
-	-ms-animation: animatedBackground 10s linear infinite;
-	-o-animation: animatedBackground 10s linear infinite;
-}
 
 .logo{
   position: absolute;
@@ -132,7 +103,7 @@ border:none;
   left: 350px;
   bottom: 446px;
 	width: 10px;
-	height: 200px;
+	height: 100px;
 	border-bottom: 1px solid black;
 	position: absolute;
 	background-color:#79221c
@@ -192,7 +163,7 @@ border:none;
   right: 350px;
   bottom: 446px;
 	width: 10px;
-	height: 200px;
+	height: 100px;
 	border-bottom: 1px solid black;
 	position: absolute;
 	background-color:#79221c
@@ -227,3 +198,31 @@ border:none;
 	position: absolute;
 	background-color:#79221c
 }
+
+#content-2{
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: -540px;
+}
+
+#content-3{
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: -520px;
+}
+
+#content-4{
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: -540px;
+}
+#content-5{
+  visibility: hidden;
+  position: absolute;
+  left: 0px;
+  bottom: -540px;
+}
+

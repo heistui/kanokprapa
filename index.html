@@ -1,13 +1,14 @@
 <html>
 <head>
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main.css">	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 </head>
 <body>
 <div class="content"  align="center">
 <img src="imgs/half-circle-1.png"> 
 <div class="logo"></div>
- <input class="search" type="text">
-  <input class="go" type="image" src="imgs/go-button.png">
+<input class="search" type="text">
+<input class="go" type="image" src="imgs/go-button.png">
 <div class="light-1"></div>
 <div class="line-1"></div>
 <div class="light-2"></div>
@@ -18,8 +19,124 @@
 <div class="line-4"></div>
 <div class="light-5"></div>
 <div class="line-5"></div>
+
+<div id="content-2">
+	<img src="imgs/menu.png"> 
 </div>
-	
+<div id="content-3">
+	<img src="imgs/about.png"> 
+</div>
+<div id="content-5">
+	<img src="imgs/contact.png"> 
+</div>
+
+</div>
+
+<script>
+var movedup = false;
+
+function showAll(){
+		for(i=1;i<6;i++){
+		  $(".light-" + i).show();
+	      $(".line-" + i).show();
+		}
+}
+
+function hideAll(){
+		for(i=1;i<6;i++){
+		  $("#content-" + i).css('visibility', 'hidden');
+		}
+}
+$(".light-1").click(function(){
+	if (movedup){
+		showAll();
+	   $('.content').animate({top: '+=500px'}, 500, function() {
+	   	   movedup = false;
+			 hideAll();
+
+	   });
+
+	}
+
+});
+$(".light-2").click(function(){
+
+	if (!movedup){
+		    showAll();
+	    hideAll();
+	   $('#content-2').css('visibility', 'visible');
+	   $(".light-2").hide();
+	   $(".line-2").hide();
+	   $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	   });  
+	}else{
+	   $('.content').animate({top: '+=500px'}, 500, function() {
+	   	    showAll();
+	    hideAll();
+	   $('#content-2').css('visibility', 'visible');
+	   $(".light-2").hide();
+	   $(".line-2").hide();
+	   	  $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	      });  
+	   });  
+	}
+});
+
+
+$(".light-3").click(function(){
+
+	if (!movedup){
+		    showAll();
+	    hideAll();
+	   $('#content-3').css('visibility', 'visible');
+	   $(".light-3").hide();
+	   $(".line-3").hide();
+	   $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	   });  
+	}else{
+	   $('.content').animate({top: '+=500px'}, 500, function() {
+	   	    showAll();
+	    hideAll();
+	   $('#content-3').css('visibility', 'visible');
+	   $(".light-3").hide();
+	   $(".line-3").hide();
+	   	  $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	      });  
+	   });  
+	}
+});
+
+
+$(".light-5").click(function(){
+
+	if (!movedup){
+		    showAll();
+	    hideAll();
+	   $('#content-5').css('visibility', 'visible');
+	   $(".light-5").hide();
+	   $(".line-5").hide();
+	   $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	   });  
+	}else{
+	   $('.content').animate({top: '+=500px'}, 500, function() {
+	   	    showAll();
+	    hideAll();
+	   $('#content-5').css('visibility', 'visible');
+	   $(".light-5").hide();
+	   $(".line-5").hide();
+	   	  $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	      });  
+	   });  
+	}
+});
+
+</script>
 </body>
 </html>
 
