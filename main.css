@@ -1,45 +1,49 @@
 
 
 .content {
-  max-width: 1300px;
-  max-height: 850px;
+  width: 1200px;
+  height: 960px;
   margin: auto;
   padding-top:0px;
+
+  position: relative;
 }
 
 html, body, #wrapper {
+
    height:100%;
    width: 100%;
    margin: 0;
    padding: 0;
    border: 0;
+     background-image:url(imgs/bg.png);
 }
 
 @keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: 100px 0; }
 }
 @-moz-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: 100px 0; }
 }
 @-webkit-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: 100px 0; }
 }
 @-ms-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: 100px 0; }
 }
 @-o-keyframes animatedBackground {
 	0% { background-position: 0 0; }
-	100% { background-position: -300px 0; }
+	100% { background-position: 100px 0; }
 }
 
 #animate-area { 
 	width: 100%; 
-	height: 1280px; 
-	background-image: url(http://davidwalsh.name/demo/bg-clouds.png);
+	height: 960px; 
+	background-image: url(imgs/bg.png);
 	background-position: 0px 0px;
 
 	animation: animatedBackground 10s linear infinite;
@@ -47,4 +51,179 @@ html, body, #wrapper {
 	-webkit-animation: animatedBackground 10s linear infinite;
 	-ms-animation: animatedBackground 10s linear infinite;
 	-o-animation: animatedBackground 10s linear infinite;
+}
+
+.logo{
+  position: absolute;
+  background-image: url(imgs/logo.png);
+  width: 328px;
+  height: 221px;
+  left: 436px;
+  top: 100px;
+}
+.search{
+  position: absolute;
+  width: 150px;
+  height: 23px;
+  left: 515px;
+  top: 291px;
+border-width:0px;
+border:none;
+}
+.go{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 665px;
+  top: 291px;
+}
+
+
+.light-1{
+  position: absolute;
+  background-image: url(imgs/light-1.png);
+  width: 214px;
+  height: 226px;
+  left: 10px;
+  bottom: 50px;
+}
+.light-1:hover{
+  position: absolute;
+  background-image: url(imgs/light-1-h.png);
+  width: 214px;
+  height: 226px;
+  left: 10px;
+  bottom: 50px;
+  transition-duration:0.8s;
+  transition-timing-function:ease-in-out;
+}
+.line-1{
+	bottom:276px;
+	left:110px;
+	width: 10px;
+	height: 450px;
+	border-bottom: 1px solid black;
+	position: absolute;
+	background-color:#79221c
+}
+
+.light-2{
+  position: absolute;
+  background-image: url(imgs/light-2.png);
+  width: 214px;
+  height: 226px;
+  left: 250px;
+  bottom: 220px;
+}
+
+.light-2:hover{
+
+  position: absolute;
+  background-image: url(imgs/light-2-h.png);
+  width: 214px;
+  height: 226px;
+  left: 250px;
+  bottom: 220px;
+  transition-duration:0.8s;
+  transition-timing-function:ease-in-out;
+}
+
+.line-2{
+  left: 350px;
+  bottom: 446px;
+	width: 10px;
+	height: 200px;
+	border-bottom: 1px solid black;
+	position: absolute;
+	background-color:#79221c
+}
+
+
+.light-3{
+  position: absolute;
+  background-image: url(imgs/light-3.png);
+  width: 214px;
+  height: 226px;
+  left: 500px;
+  bottom: 50px;
+}
+
+.light-3:hover{
+  position: absolute;
+  background-image: url(imgs/light-3-h.png);
+  width: 214px;
+  height: 226px;
+  left: 500px;
+  bottom: 50px;
+  transition-duration:0.8s;
+  transition-timing-function:ease-in-out;
+}
+
+.line-3{
+	bottom:276px;
+	left:600px;
+	width: 10px;
+	height: 230px;
+	border-bottom: 1px solid black;
+	position: absolute;
+	background-color:#79221c
+}
+
+.light-4{
+  position: absolute;
+  background-image: url(imgs/light-4.png);
+  width: 214px;
+  height: 226px;
+  right: 250px;
+  bottom: 220px;
+}
+
+.light-4:hover{
+  position: absolute;
+  background-image: url(imgs/light-4-h.png);
+  width: 214px;
+  height: 226px;
+  right: 250px;
+  bottom: 220px;
+  transition-duration:0.8s;
+  transition-timing-function:ease-in-out;
+}
+.line-4{
+  right: 350px;
+  bottom: 446px;
+	width: 10px;
+	height: 200px;
+	border-bottom: 1px solid black;
+	position: absolute;
+	background-color:#79221c
+}
+
+.light-5{
+  position: absolute;
+  background-image: url(imgs/light-5.png);
+  width: 214px;
+  height: 226px;
+  right: 10px;
+  bottom: 50px;
+}
+
+.light-5:hover{
+  position: absolute;
+  background-image: url(imgs/light-5-h.png);
+  width: 214px;
+  height: 226px;
+  right: 10px;
+  bottom: 50px;
+  transition-duration:0.8s;
+  transition-timing-function:ease-in-out;
+}
+
+.line-5{
+	bottom:276px;
+	right: 110px;
+	width: 10px;
+	height: 450px;
+	border-bottom: 1px solid black;
+	position: absolute;
+	background-color:#79221c
 }
