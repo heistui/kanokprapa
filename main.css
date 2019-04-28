@@ -221,7 +221,16 @@ html, body, #wrapper {
     background-image: url(imgs/image.png)
 }
 
-
+.back {
+    position: absolute;
+    margin-left: -520px;
+    margin-top: 280px;
+}
+.next {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 280px;
+}
 .gallery {
     list-style: none;
     margin-left:150px;

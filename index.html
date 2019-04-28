@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="content" align="center">
-        <embed style="position: absolute;" src="bg-sound.mp3" autostart="true" loop="true" hidden="true" width="0" height="0">
+        <!--<embed style="position: absolute;" src="bg-sound.mp3" autostart="true" loop="true" hidden="true" width="0" height="0">-->
         <img src="imgs/half-circle-1.png">
         <div class="logo"></div>
         <input class="search" type="text">
@@ -30,12 +30,15 @@
             <img src="imgs/about.png">
         </div>
         <div id="content-4" class="content-image">
+            <input class="back" type="image" src="imgs/back-button.png">
+            <input class="next" type="image" src="imgs/next-button.png">
             <ul class="gallery">
-                <li><em></em><img src="https://www.w3schools.com/howto/img_snow.jpg" alt="image"></li>
-                <li><em></em><img src="https://www.w3schools.com/howto/img_snow.jpg" alt="image"></li>
-                <li><em></em><img src="https://www.w3schools.com/howto/img_snow.jpg" alt="image"></li>
-                <li><em></em><img src="https://www.w3schools.com/howto/img_snow.jpg" alt="image"></li>
+                <li><em></em><img id="img0"></li>
+                <li><em></em><img id="img1"></li>
+                <li><em></em><img id="img2"></li>
+                <li><em></em><img id="img3"></li>
             </ul>
+
         </div>
 
 
@@ -47,6 +50,53 @@
     </div>
 
     <script>
+        var firstIndex = 0;
+        var images = [
+            "https://f.ptcdn.info/801/055/000/p2zh1qhpuaFEQ5ivUPe-o.png",
+            "https://f.ptcdn.info/801/055/000/p2zgygmfltIJ28n5ff1-o.jpg",
+            "https://f.ptcdn.info/800/055/000/p2yvbfosat4W24dz18u-o.jpg",
+            "https://f.ptcdn.info/800/055/000/p2yvee2snIP8OkKW9n3-o.jpg",
+            "https://f.ptcdn.info/800/055/000/p2yvhr543xImeQK1eeB-o.jpg",
+            "https://f.ptcdn.info/800/055/000/p2yvvmgu0pDQku0k6SA-o.jpg",
+            "http://www.naibann.com/wp-content/uploads/2018/01/mala-bbq-hot-and-spicy-easy-for-dorm-cover.jpg",
+            "http://www.naibann.com/wp-content/uploads/2018/01/mala-bbq-hot-and-spicy-easy-for-dorm-10.jpg",
+            "https://f.ptcdn.info/801/055/000/p2zh1qhpuaFEQ5ivUPe-o.png",
+        ];
+
+        function loadImage(items) {
+            console.log(items);
+            for (var i in items) {
+                $("#img" + i).attr("src",items[i]);
+                if (i > 4) return;
+            }
+        }
+
+        loadImage(images);
+
+        $(".back").click(function () {
+            var imgs = [];
+            if (firstIndex > 0) {
+                firstIndex--;
+                for (i = firstIndex; i <= firstIndex + 3; i++) {
+                    imgs.push(images[i]);
+                } 
+                loadImage(imgs);
+            }
+        });
+
+
+        $(".next").click(function () {
+            var imgs = [];
+            if (firstIndex + 3 <= images.length-2) {
+                firstIndex++;
+                for (i = firstIndex; i <= firstIndex + 3; i++) {
+                    imgs.push(images[i]);
+                }
+                loadImage(imgs);
+            }
+        });
+
+
         var movedup = false;
 
         function showAll() {
