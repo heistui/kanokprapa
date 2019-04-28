@@ -1,213 +1,255 @@
 
 
 .content {
-  width: 1200px;
-  height: 960px;
-  margin: auto;
-  padding-top:0px;
-  padding-bottom:0px;
-   background-image:url(imgs/bg.png);
-  position: relative;
+    width: 1200px;
+    height: 960px;
+    margin: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-image: url(imgs/bg.png);
+    position: relative;
 }
 
 html, body, #wrapper {
-
-   height:100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   border: 0;
-    background-color:#ebd0bb;
-    position:fixed;
-    overflow-y:hidden;
-    overflow-x:hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #ebd0bb;
+    position: fixed;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
 
-.logo{
-  position: absolute;
-  background-image: url(imgs/logo.png);
-  width: 328px;
-  height: 221px;
-  left: 436px;
-  top: 100px;
+.logo {
+    position: absolute;
+    background-image: url(imgs/logo.png);
+    width: 328px;
+    height: 221px;
+    left: 436px;
+    top: 100px;
 }
-.search{
-  position: absolute;
-  width: 150px;
-  height: 23px;
-  left: 515px;
-  top: 291px;
-border-width:0px;
-border:none;
+
+.search {
+    position: absolute;
+    width: 150px;
+    height: 23px;
+    left: 515px;
+    top: 291px;
+    border-width: 0px;
+    border: none;
 }
-.go{
-  position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 665px;
-  top: 291px;
+
+.go {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left: 665px;
+    top: 291px;
 }
 
 
-.light-1{
-  position: absolute;
-  background-image: url(imgs/light-1.png);
-  width: 214px;
-  height: 226px;
-  left: 10px;
-  bottom: 50px;
-}
-.light-1:hover{
-  position: absolute;
-  background-image: url(imgs/light-1-h.png);
-  width: 214px;
-  height: 226px;
-  left: 10px;
-  bottom: 50px;
-  transition-duration:0.8s;
-  transition-timing-function:ease-in-out;
-}
-.line-1{
-	bottom:276px;
-	left:110px;
-	width: 10px;
-	height: 450px;
-	border-bottom: 1px solid black;
-	position: absolute;
-	background-color:#79221c
+.light-1 {
+    position: absolute;
+    background-image: url(imgs/light-1.png);
+    width: 214px;
+    height: 226px;
+    left: 10px;
+    bottom: 50px;
 }
 
-.light-2{
-  position: absolute;
-  background-image: url(imgs/light-2.png);
-  width: 214px;
-  height: 226px;
-  left: 250px;
-  bottom: 220px;
+    .light-1:hover {
+        position: absolute;
+        background-image: url(imgs/light-1-h.png);
+        width: 214px;
+        height: 226px;
+        left: 10px;
+        bottom: 50px;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
+    }
+
+.line-1 {
+    bottom: 276px;
+    left: 110px;
+    width: 10px;
+    height: 450px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: #79221c
 }
 
-.light-2:hover{
-
-  position: absolute;
-  background-image: url(imgs/light-2-h.png);
-  width: 214px;
-  height: 226px;
-  left: 250px;
-  bottom: 220px;
-  transition-duration:0.8s;
-  transition-timing-function:ease-in-out;
+.light-2 {
+    position: absolute;
+    background-image: url(imgs/light-2.png);
+    width: 214px;
+    height: 226px;
+    left: 250px;
+    bottom: 220px;
 }
 
-.line-2{
-  left: 350px;
-  bottom: 446px;
-	width: 10px;
-	height: 100px;
-	border-bottom: 1px solid black;
-	position: absolute;
-	background-color:#79221c
-}
+    .light-2:hover {
+        position: absolute;
+        background-image: url(imgs/light-2-h.png);
+        width: 214px;
+        height: 226px;
+        left: 250px;
+        bottom: 220px;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
+    }
 
-
-.light-3{
-  position: absolute;
-  background-image: url(imgs/light-3.png);
-  width: 214px;
-  height: 226px;
-  left: 500px;
-  bottom: 50px;
-}
-
-.light-3:hover{
-  position: absolute;
-  background-image: url(imgs/light-3-h.png);
-  width: 214px;
-  height: 226px;
-  left: 500px;
-  bottom: 50px;
-  transition-duration:0.8s;
-  transition-timing-function:ease-in-out;
-}
-
-.line-3{
-	bottom:276px;
-	left:600px;
-	width: 10px;
-	height: 230px;
-	border-bottom: 1px solid black;
-	position: absolute;
-	background-color:#79221c
-}
-
-.light-4{
-  position: absolute;
-  background-image: url(imgs/light-4.png);
-  width: 214px;
-  height: 226px;
-  right: 250px;
-  bottom: 220px;
-}
-
-.light-4:hover{
-  position: absolute;
-  background-image: url(imgs/light-4-h.png);
-  width: 214px;
-  height: 226px;
-  right: 250px;
-  bottom: 220px;
-  transition-duration:0.8s;
-  transition-timing-function:ease-in-out;
-}
-.line-4{
-  right: 350px;
-  bottom: 446px;
-	width: 10px;
-	height: 100px;
-	border-bottom: 1px solid black;
-	position: absolute;
-	background-color:#79221c
-}
-
-.light-5{
-  position: absolute;
-  background-image: url(imgs/light-5.png);
-  width: 214px;
-  height: 226px;
-  right: 10px;
-  bottom: 50px;
-}
-
-.light-5:hover{
-  position: absolute;
-  background-image: url(imgs/light-5-h.png);
-  width: 214px;
-  height: 226px;
-  right: 10px;
-  bottom: 50px;
-  transition-duration:0.8s;
-  transition-timing-function:ease-in-out;
-}
-
-.line-5{
-	bottom:276px;
-	right: 110px;
-	width: 10px;
-	height: 450px;
-	border-bottom: 1px solid black;
-	position: absolute;
-	background-color:#79221c
-}
-
-.content-arrange{
-  visibility: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: -562px;
+.line-2 {
+    left: 350px;
+    bottom: 446px;
+    width: 10px;
+    height: 100px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: #79221c
 }
 
 
-.border-image { 
-  border-image: url(imgs/frame.png) 30 round;
+.light-3 {
+    position: absolute;
+    background-image: url(imgs/light-3.png);
+    width: 214px;
+    height: 226px;
+    left: 500px;
+    bottom: 50px;
 }
+
+    .light-3:hover {
+        position: absolute;
+        background-image: url(imgs/light-3-h.png);
+        width: 214px;
+        height: 226px;
+        left: 500px;
+        bottom: 50px;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
+    }
+
+.line-3 {
+    bottom: 276px;
+    left: 600px;
+    width: 10px;
+    height: 230px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: #79221c
+}
+
+.light-4 {
+    position: absolute;
+    background-image: url(imgs/light-4.png);
+    width: 214px;
+    height: 226px;
+    right: 250px;
+    bottom: 220px;
+}
+
+    .light-4:hover {
+        position: absolute;
+        background-image: url(imgs/light-4-h.png);
+        width: 214px;
+        height: 226px;
+        right: 250px;
+        bottom: 220px;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
+    }
+
+.line-4 {
+    right: 350px;
+    bottom: 446px;
+    width: 10px;
+    height: 100px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: #79221c
+}
+
+.light-5 {
+    position: absolute;
+    background-image: url(imgs/light-5.png);
+    width: 214px;
+    height: 226px;
+    right: 10px;
+    bottom: 50px;
+}
+
+    .light-5:hover {
+        position: absolute;
+        background-image: url(imgs/light-5-h.png);
+        width: 214px;
+        height: 226px;
+        right: 10px;
+        bottom: 50px;
+        transition-duration: 0.8s;
+        transition-timing-function: ease-in-out;
+    }
+
+.line-5 {
+    bottom: 276px;
+    right: 110px;
+    width: 10px;
+    height: 450px;
+    border-bottom: 1px solid black;
+    position: absolute;
+    background-color: #79221c
+}
+
+.content-arrange {
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: -562px;
+}
+
+
+.content-image {
+    width: 1200px;
+    height: 654px;
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    bottom: -653px;
+    background-image: url(imgs/image.png)
+}
+
+
+.gallery {
+    list-style: none;
+    margin-left:150px;
+    margin-top:220px;
+    padding: 0;
+}
+
+    .gallery li {
+        margin: 5px;
+        padding: 0;
+        float: left;
+        position: relative;
+        width: 218px;
+        height: 149px;
+    }
+
+
+    .gallery img {
+        width: 210px;
+        height: 145px;
+    }
+
+    .gallery em {
+        width: 216px;
+        background: url(imgs/frame.png) no-repeat;
+        display: block;
+        position: absolute;
+        text-align: center;
+        font: 100%/100% Georgia, "Times New Roman", Times, serif;
+        padding-top: 168px;
+    }
