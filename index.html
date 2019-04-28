@@ -1,8 +1,9 @@
+
 <html>
 <head>
 <link rel="stylesheet" href="main.css">	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<title>หม่าล่าตระกูลหลี</title>
+<title> :) </title>
 </head>
 <body>
 <div class="content"  align="center">
@@ -22,14 +23,17 @@
 <div class="light-5"></div>
 <div class="line-5"></div>
 
-<div id="content-2">
-	<img src="imgs/menu-bg.png"> 
+<div id="content-2" class="content-arrange">
+	<img src="imgs/menu.png"> 
 </div>
-<div id="content-3">
-	<img src="imgs/about-bg.png"> 
+<div id="content-3" class="content-arrange">
+	<img src="imgs/about.png"> 
 </div>
-<div id="content-5">
-	<img src="imgs/contact-bg.png"> 
+<div id="content-4" class="content-arrange">
+	<img src="imgs/image.png"> 
+</div>
+<div id="content-5" class="content-arrange">
+	<img src="imgs/contact.png"> 
 </div>
 
 </div>
@@ -112,6 +116,31 @@ $(".light-3").click(function(){
 	}
 });
 
+$(".light-4").click(function(){
+
+	if (!movedup){
+		    showAll();
+	    hideAll();
+	   $('#content-4').css('visibility', 'visible');
+	   $(".light-4").hide();
+	   $(".line-4").hide();
+	   $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	   });  
+	}else{
+	   $('.content').animate({top: '+=500px'}, 500, function() {
+	   	    showAll();
+	    hideAll();
+	   $('#content-4').css('visibility', 'visible');
+	   $(".light-4").hide();
+	   $(".line-4").hide();
+	   	  $('.content').animate({top: '-=500px'}, 500, function() {
+	   	   movedup = true;
+	      });  
+	   });  
+	}
+});
+
 
 $(".light-5").click(function(){
 
@@ -141,5 +170,4 @@ $(".light-5").click(function(){
 </script>
 </body>
 </html>
-
 
