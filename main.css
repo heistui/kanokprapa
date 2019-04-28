@@ -200,30 +200,14 @@ border:none;
 	background-color:#79221c
 }
 
-#content-2{
+.content-arrange{
   visibility: hidden;
   position: absolute;
   left: 0px;
-  bottom: -540px;
+  bottom: -562px;
 }
 
-#content-3{
-  visibility: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: -520px;
-}
 
-#content-4{
-  visibility: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: -540px;
+.border-image { 
+  border-image: url(imgs/frame.png) 30 round;
 }
-#content-5{
-  visibility: hidden;
-  position: absolute;
-  left: 0px;
-  bottom: -540px;
-}
-
