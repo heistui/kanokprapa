@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=1200">
     <title> หม่าล่าตระกูลหลี่ </title>
 </head>
 <body>
@@ -35,6 +36,9 @@
         <div class="light-5" onMouseEnter="playHover()" onMouseDown="playClick()"></div>
         <div class="line-5"></div>
 
+		<div id="content-1" class="content-arrange">
+            <img src="imgs/home.png">
+        </div>
         <div id="content-2" class="content-arrange">
             <img src="imgs/menu.png">
         </div>
@@ -65,6 +69,7 @@
 		
 		$( document ).ready(function() {
 			 loadImage(images);  
+			 $("#content-1").css('visibility', 'visible');
 		});
         var firstIndex = 0;
         var images = [
@@ -99,6 +104,7 @@
      
 
         $(".back").click(function () {
+			playHover();
             var imgs = [];
             if (firstIndex > 0) {
                 firstIndex--;
@@ -111,6 +117,7 @@
 
 
         $(".next").click(function () {
+		    playHover();
             var imgs = [];
             if (firstIndex + 3 <= images.length-2) {
                 firstIndex++;
@@ -137,12 +144,13 @@
             }
         }
         $(".light-1").click(function () {
+			;
             if (movedup) {
                 $('.content').animate({ top: '+=500px' }, 500, function () {
                     movedup = false;
                     hideAll();
                     showAll();
-
+					$("#content-1").css('visibility', 'visible')
                 });
 
             }
